@@ -14,7 +14,10 @@ class PresidentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'country_id' => $this->faker->numberBetween(1, 10),
+            'politician_id' => $this->faker->numberBetween(1, 10),
+            'from' => $this->faker->date(),
+            'to' => $this->faker->date()
         ];
     }
 }

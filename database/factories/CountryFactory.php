@@ -13,8 +13,11 @@ class CountryFactory extends Factory
      */
     public function definition()
     {
+        $continents = ['Europe', 'Asia', 'North America', 'South Americaa', 'Australia', 'Africa'];
         return [
-            //
+            'name' => $this->faker->country,
+            'capital' => $this->faker->city,
+            'continent' => $continents[$this->faker->numberBetween(0, 6)]
         ];
     }
 }

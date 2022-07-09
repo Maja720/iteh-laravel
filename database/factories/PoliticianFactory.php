@@ -14,7 +14,10 @@ class PoliticianFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'first_name' => $this->faker->firstName,
+            'last_name' => $this->faker->lastName,
+            'birth_place' => $this->faker->city,
+            'birth_date' => $this->faker->date()
         ];
     }
 }

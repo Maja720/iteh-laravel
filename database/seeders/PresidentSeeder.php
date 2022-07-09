@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\President;
 use Illuminate\Database\Seeder;
 
 class PresidentSeeder extends Seeder
@@ -13,6 +14,6 @@ class PresidentSeeder extends Seeder
      */
     public function run()
     {
-        //
+        President::factory(24)->create();
     }
 }
