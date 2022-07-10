@@ -9,6 +9,7 @@ class President extends Model
 {
     use HasFactory;
     protected $fillable = ['country_id', 'politician_id', 'from', 'to'];
+    protected $with = ['politician', 'country'];
 
 
     public function country()
